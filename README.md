@@ -1,61 +1,73 @@
 # DMARC Audit Tool
 
-A comprehensive security audit tool for analyzing DMARC, SPF, and DKIM configurations.
+A comprehensive security auditing tool to analyze DMARC, SPF, and DKIM configurations.
+
+Designed to quickly audit and capture screenshots for penetration testing and security assessments.
+
+![DMARC Audit Tool Screenshot](https://github.com/user-attachments/assets/6e8e64f7-18d0-443d-b7cb-a1e69b2b82a4)
+![SPF & DKIM Check Screenshot](https://github.com/user-attachments/assets/2efaa269-c11c-487d-9144-653bc364d910)
 
 ## Features
 
-- Complete DMARC record analysis
-- SPF record validation
-- DKIM configuration checks
-- MX record security validation
-- SSL/TLS certificate analysis
-- RSA key strength verification
-- Detailed security reporting
-- Multiple output formats (JSON, CSV)
+- **DMARC Record Analysis** - Verifies and evaluates DMARC policies.
+- **SPF Record Validation** - Ensures SPF records are properly configured.
+- **DKIM Configuration Checks** - Examines DKIM selectors and keys.
+- **MX Record Security Validation** - Checks mail exchange records for security flaws.
+- **SSL/TLS Certificate Analysis** - Assesses SSL/TLS configurations.
+- **RSA Key Strength Verification** - Analyzes the strength of cryptographic keys.
+- **Detailed Security Reporting** - Provides in-depth audit reports.
+- **Multiple Output Formats** - Supports JSON, CSV, and standard output formats.
+
+---
 
 ## Installation
 
+### Clone the Repository
+```bash
 git clone https://github.com/sevbandonmez/dmarc-audit.git
 cd dmarc-audit
+```
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
 python3 setup.py install
 pip install -e .
-pip install -r requirements.txt
+```
 
-### Basic Usage
-
-python -m dmarc_audit example.com
-
-### Detailed Report
-
-python -m dmarc_audit example.com --detailed    
-
-### Output Formats
-
-python -m dmarc_audit example.com --format json
-python -m dmarc_audit example.com --format csv      
-
-### Custom DKIM selector
-
-python -m dmarc_audit example.com --dkim-selector myselector
-
-## Installation
-
-bash
-git clone https://github.com/sevbandonmez/dmarc-audit.git
-cd dmarc-audit
-pip install -r requirements.txt
+---
 
 ## Usage
 
-python dmarc_audit.py example.com
-python dmarc_audit.py example.com --detailed
-python dmarc_audit.py example.com --format json
+### Basic Scan
+```bash
+python -m dmarc_audit example.com
+```
+
+### Detailed Report
+```bash
+python -m dmarc_audit example.com --detailed
+```
+
+### Output Formats
+```bash
+python -m dmarc_audit example.com --format json
+python -m dmarc_audit example.com --format csv
+```
+
+### Custom DKIM Selector
+```bash
+python -m dmarc_audit example.com --dkim-selector myselector
+```
+
+---
 
 ## License
 
-MIT License - See LICENSE file for details
+This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
 
 ## Author
 
-Sevban Dönmez
-- GitHub: [@sevbandonmez](https://github.com/sevbandonmez)
+**Sevban Dönmez**  
+GitHub: [@sevbandonmez](https://github.com/sevbandonmez)
+
