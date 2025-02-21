@@ -1,0 +1,6 @@
+Type,Finding,Severity
+SPF,Missing SPF record,ERROR
+SPF,Overly permissive SPF policy (+all),WARNING
+DMARC,Policy set to monitoring only (p=none),WARNING
+DMARC,No subdomain policy defined,ERROR
+DKIM,Weak RSA key length detected (1024 bits),ERROR 

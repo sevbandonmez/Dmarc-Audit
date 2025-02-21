@@ -1,0 +1,15 @@
+{
+    "scan_time": "2024-02-19T10:30:45",
+    "domain": "example.com",
+    "spf_vulnerabilities": [
+        "Missing SPF record",
+        "Overly permissive SPF policy (+all)"
+    ],
+    "dmarc_vulnerabilities": [
+        "Policy set to monitoring only (p=none)",
+        "No subdomain policy defined"
+    ],
+    "dkim_vulnerabilities": [
+        "Weak RSA key length detected (1024 bits)"
+    ]
+} 
