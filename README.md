@@ -41,23 +41,23 @@ pip install -e .
 
 ### Basic Scan
 ```bash
-python -m dmarc_audit example.com
+dmarc-audit example.com
 ```
 
 ### Detailed Report
 ```bash
-python -m dmarc_audit example.com --detailed
+dmarc-audit example.com --detailed
 ```
 
 ### Output Formats
 ```bash
-python -m dmarc_audit example.com --format json
-python -m dmarc_audit example.com --format csv
+dmarc-audit example.com --format json
+dmarc-audit example.com --format csv
 ```
 
 ### Custom DKIM Selector
 ```bash
-python -m dmarc_audit example.com --dkim-selector myselector
+dmarc_audit example.com --dkim-selector myselector
 ```
 
 ---
